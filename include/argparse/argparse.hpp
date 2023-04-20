@@ -1436,7 +1436,7 @@ public:
     m_subparser_used.insert_or_assign(parser.m_program_name, false);
   }
 
-private:
+protected:
   bool is_valid_prefix_char(char c) const {
     return m_prefix_chars.find(c) != std::string::npos;
   }
